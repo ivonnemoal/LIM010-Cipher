@@ -1,3 +1,41 @@
+# SECURE ENROLLMENT SYSTEM
+
+**Esta es una página web para alumnos que van a matricularse con la opción de poder ocultar su nombre por uno secreto.**
+
+#### Los usuarios 
+Son un **grupo de estudiantes** que al matricularse en sus cursos no desean que sus datos se publiquen por ello se les da la opción de encriptar su nombre por uno secreto.
+
+#### El objetivo 
+Es resolver este problema de privacidad y elección de cursos por alumno o la cantidad de veces que este lo desee llevar, dándole seguridad y confianza al usuario al momento de matricularse sabiendo que **sus datos se mantienen en reserva** y que únicamente el es dueño de su codigo de identidad.
+
+#### * Imagen final del proyecto.
+
+### Decisiones de diseño
+
+#### * Imagen del Diagrama de flujo.
+![Diagrama de Flujo](img/Diagrama-de-flujo.png "Diagrama")
+
+#### * Imagen del primer prototipo en papel.
+![Prototipo de Baja fidelidad](img/Prototype-01.png "Prototipo01")
+
+![Prototipo de Baja fidelidad1](img/Prototype-02.png "Prototipo02")
+
+#### * Resumen del feedback recibido indicando las mejoras a realizar.
+
+
+#### * Imagen del prototipo final en Balsamiq.
+![Prototipo en Balsamiq](img/Mockup-01.png "Pagina01")
+
+![Prototipo en Balsamiq1](img/Mockup-02.png "Pagina02")
+
+![Prototipo en Balsamiq2](img/Mockup-03.png "Pagina03")
+
+![Prototipo en Balsamiq3](img/Mockup-04.png "Pagina04")
+
+
+
+
+
 # Cifrado César
 
 ## Índice
