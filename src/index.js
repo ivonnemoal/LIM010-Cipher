@@ -1,19 +1,19 @@
 /* Acá va tu código */
-const inputPassword = document.getElementById('password');
-const textoResultado = document.getElementById('p');
+const password = document.getElementById('password').value;
+const name = document.getElementById('name').value;
+const textResult = document.getElementById('p');
 const btnLogin = document.getElementById('btn');
-let contador = 3;
-
+let counter = 3;
 
 btnLogin.addEventListener('click', () => {
-    contador =  contador - 1;
-    console.log(contador);
-    if(contador === 0) {
-      alert('Por ahora no puedes ingresar');
-    }else if(inputPassword.value === 'LABORATORIA'){
-        alert('welcome');
+    counter = counter - 1;
+    console.log(counter);
+    if(counter === 0) {
+        textResult.innerHTML = '¡YOU CAN NOT ENTER FOR NOW!';
+    }else if(password === 'LABORATORIA'){
+        textResult.innerHTML = 'WELCOME'+ ' ' + name;
     }else {
-        alert('contraseña incorrecta');
+        textResult.innerHTML = 'incorrect password try again';
     }
 });
 
