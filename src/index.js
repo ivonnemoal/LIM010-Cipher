@@ -1,7 +1,7 @@
 /* Acá va tu código */
 const password = document.getElementById('password').value;
 const name = document.getElementById('name').value;
-const textResult = document.getElementById('p');
+const textResult = document.getElementById('result');
 const btnLogin = document.getElementById('btn');
 let counter = 3;
 

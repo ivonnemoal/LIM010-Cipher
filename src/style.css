@@ -1,4 +1,29 @@
 /* Acá van tus reglas de estilo */
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Nunito Sans', sans-serif;
+}
+
+.fixed {
+        width: 100%;
+        margin: auto; /*para que este alineado y centrado,al ser responsive*/
+        display: table;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
