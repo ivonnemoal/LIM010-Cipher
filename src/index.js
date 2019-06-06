@@ -9,29 +9,15 @@ btnLogin.addEventListener('click', () => {
     contador =  contador - 1;
     console.log(contador);
     if(contador === 0) {
-      alert('agotaste los intentos');
+      alert('Por ahora no puedes ingresar');
+    }else if(inputPassword.value === 'LABORATORIA'){
+        alert('welcome');
+    }else {
+        alert('contraseña incorrecta');
     }
 });
 
-
 // const clavecita = btn.addEventListener('click',incorrecta());
 // // p.innerHTML = clavecita;
-
-// const incorrecta = (password) => {
-//     if(password !== 'LABORATORIA'){
-//         console.log('incorrect');
-//     }
-//     else {
-
-//     }
-// }
-
-// {p.innerHTML = password;}
-
-// if(password == 'LABORATORIA')
-// const passwordIncorrect = () => {
-//     for(let i= 0; i<= 3;  i++){
-
-//     }
 // return
 // };
