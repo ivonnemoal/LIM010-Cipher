@@ -1,12 +1,10 @@
 # SECURE ENROLLMENT SYSTEM
 
-**Esta es una página web para alumnos que van a matricularse con la opción de poder ocultar su nombre por uno secreto.**
+### Esta es una página web para alumnos que van a matricularse con la opción de poder ocultar su nombre por uno secreto.
 
-#### Los usuarios 
-Son un **grupo de estudiantes** que al matricularse en sus cursos no desean que sus datos se publiquen por ello se les da la opción de encriptar su nombre por uno secreto.
+**Los usuarios** son **un grupo de estudiantes** que al matricularse en sus cursos no desean que sus datos se publiquen por ello se les da la opción de encriptar su nombre por uno secreto.
 
-#### El objetivo 
-Es resolver este problema de privacidad y elección de cursos por alumno o la cantidad de veces que este lo desee llevar, dándole seguridad y confianza al usuario al momento de matricularse sabiendo que **sus datos se mantienen en reserva** y que únicamente el es dueño de su codigo de identidad.
+**El objetivo** es resolver este problema de privacidad y la elección de cursos que haga el alumno o la cantidad de veces que este lo desee llevar, **dándole seguridad y confianza** al usuario al momento de matricularse **sabiendo que sus datos se mantienen en reserva** y que únicamente el es dueño de su codigo de identidad.
 
 #### * Imagen final del proyecto.
 
