@@ -1,21 +1,32 @@
 /* Acá va tu código */
-const password = document.getElementById('password');
-const name = document.getElementById('name');
-const textResult = document.getElementById('result');
+
+const result = document.getElementById('result');
 const btnLogin = document.getElementById('btn');
-let counter = 3;
+let counter = 2;
+
 
 const validatePassword = btnLogin.addEventListener('click', () => {
-    counter = counter - 1;
-    if(counter === 0) {
-        textResult.innerHTML = '¡YOU CAN NOT ENTER FOR NOW!';
-    }else if(password.value === 'LABORATORIA'){
-        textResult.innerHTML = 'WELCOME'+ ' ' + name.value;
-    }else {
-        textResult.innerHTML = 'incorrect password try again';
-    }
-});
+    const name = document.getElementById('name').value;
+    document.getElementById('name').value ='';
 
+    const password = document.getElementById('password').value;   
+    document.getElementById('password').value ='';
+ 
+    // const numero1 = parseInt(password.value);}
+    if(counter > 0){
+        counter--;
+        if(password === 'LABORATORIA'){
+            result.innerHTML = 'WELCOME'+ ' ' + name;
+        }else {
+            result.innerHTML = 'incorrect password try again';
+            // document.getElementById('result').innerHTML = '';
+        }
+    }else {
+       result.innerHTML = '¡YOU CAN NOT ENTER FOR NOW!';}
+    });
+
+
+    
 
 // const clavecita = btn.addEventListener('click',incorrecta());
 // // p.innerHTML = clavecita;
