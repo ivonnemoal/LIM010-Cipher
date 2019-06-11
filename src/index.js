@@ -19,14 +19,10 @@ const validatePassword = btnLogin.addEventListener('click', () => {
             result.innerHTML = 'WELCOME'+ ' ' + name;
         }else {
             result.innerHTML = 'incorrect password try again';
-            // document.getElementById('result').innerHTML = '';
         }
     }else {
-       result.innerHTML = '¡YOU CAN NOT ENTER FOR NOW!';}
+       result.innerHTML = '¡WE ARE SORRY BUT YOU CAN NOT ENTER FOR NOW!';}
     });
-
-
-    
 
 // const clavecita = btn.addEventListener('click',incorrecta());
 // // p.innerHTML = clavecita;
