@@ -1,15 +1,16 @@
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+    
     background-image: url(img/fondo3.png);
     background-attachment: fixed;
     background-size: cover;
     color: whitesmoke;
-    font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
@@ -24,6 +25,8 @@ header {
 
 main {
     width: 100%;
+    height: auto;
+    
 }
 
 footer {
@@ -34,25 +37,32 @@ footer {
     height: auto;
     padding: 10px 3em;
     background-color: rgb(172, 166, 166);
-    position: fixed;
+    position: relative;
     bottom: 0px;
 }
 
 .title {
     width: 100%;
-    margin: 2em 0;
-    padding: 3em ;
+    margin: 1em 0;
+    padding: 2em ;
+    font-size: 33px;
     background-color: rgb(2, 2, 100,0.8);
     text-align: center;
 }
 
 .login {
     background-color: rgb(2, 2, 100,0.8);
-    width: 50%;
+    width: 35%;
     height: auto;
-    border-radius: 10%;
-    padding: 3em;
-    margin: 3em auto;
+    border-radius: 25px;
+    padding: 1em 3em 1em 3em;
+    margin: 1em auto;
+    /* overflow-wrap: break-word; */
+    font-size: 23px;
+    /* align-items: center; */
+    
+    /* display:flex;
+    flex-direction: column; */
 }
  .nav-home{
     padding: 22px;
@@ -63,16 +73,35 @@ footer {
 }
 
 .user{
-
+    width: 200px;
+    height: auto;
+    margin: 0 7em 1em 7em;
+   
 }
-.data{
 
+.user-icon {
+    width: 100%;
 }
+
+
 .buttons{
-    margin: 1em;
+    margin: 1em 8em;
+    padding: 5px;
+    width:30%;
+    height:auto;
+    border-radius: 15px;
+    font-size: 22px;
+
 
 }
 .inputs{
-    margin: 1em;
+    margin:1em 3em 2em 3em;
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 1em;
 
+}
+.labels{
+    margin: 0 3em;
 }
