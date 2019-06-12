@@ -1,29 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Caesar Cipher</title>
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+  <title>Secure Enrollment System</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-  <div>
-    <h1 class="">CODIGO CIPHER</h1>
-    <form action="">
-        <label for="password">USUARIO</label>
-        <input type="text" id="name" placeholder="enter your username">
-        <br>
-      <label for="password">CONTRASEÑA</label>
-      <input type="text" id="password" placeholder="enter your password">
-    </form>
-    <button id="btn" class="botones">LOGIN</button>
-    <p id="p"></p>
-  </div>
+
+  <header class="fixed">
+    <img class="shield" src="img/university-logo.png" alt="shield-icon">
+    <a href="index.html"><img src="img/home-logo.png" alt="home-logo" class="nav-home"></a>
+  </header>
+
+  <main>
+
+    <!-- Primera Pantalla -->
+    <section class="screen1" id="screen1">
+      <div class="title">
+        <h1 id=title1>SECURE ENROLLMENT SYSTEM</h1>
+      </div>
+      <div class="login">
+        <figure class="user">
+          <img src="img/user.png" class="user-icon" alt="user-icon">
+        </figure>
+        <div class="data">
+          <label for="name" class="labels"><b>USER</b></label>
+          <input type="text" id="name" class="inputs" placeholder="enter a username">
+          <label for="password" class="labels"><b>PASSWORD</b></label>
+          <input type="password" maxlength="11" id="password" class="inputs" placeholder="enter a password">
+        </div>
+        <div id="error"></div>
+        <button id="btnLogin" class="buttons"><b>LOGIN</b></button>
+      </div>
+    </section>
+
+    <!-- Segunda Pantalla -->
+    </section class="screen2 ocultar" id="screen2">
+    <div class="title">
+      <h1 id="welcome"></h1>
+    </div>
+    <div class="title">
+      <p class="text">We take care of your privacy for that reason we use an encoder name where you choose a number as
+        your personal key to generate your codename.</p>
+    </div>
+    <div class="title">
+      <p class="text2">Choose an option</p>
+    </div>
+    <button id="btn1" class="buttons"><b>ENCODE</b></button>
+    <button id="btn2" class="buttons"><b>DECODE</b></button>
+    </section>
+
+    <!-- Tercera Pantalla -->
+    <section class="screen3" id="screen3">
+      <div class="title">
+        <h1 id=title3>Your Safety is the Key</h1>
+      </div>
+      <div class="title">
+        <label for="textCode">Enter text</label>
+        <input type="text" id="textCode" placeholder="write here">
+
+        <label for="offset">Enter number</label>
+        <input type="number" id="offset" placeholder="write here">
+
+        <button id="btnEncode" class="buttons" value=""><b>ENCODE</b></button>
+        <button id="btnDecode" class="buttons" value=""><b>DECODE</b></button>
+
+        <h4>¡ Here is your Codename !</h4>
+        <h3 class="result" id="result"></h3>
+
+        <button id="btnSend" class="buttons" value=""><b>SEND</b></button>
+        <button id="btnReset" class="buttons" value=""><b>RESET</b></button>
+      </div>
+    </section>
+
+    <!-- Pantalla Final -->
+    <section class="screen4" id="screen4">
+      <div class="title">
+        <p id="text3">¡ Your Codename was successfally saved !</p>
+      </div>
+      <div class="title">
+        <h1>¡ Thank you for your trusting us !</h1>
+      </div>
+      <a href="index.html" class="finish">return homepage</a>
+    </section>
+
+    <!-- Pantalla Bloqueo -->
+    <section>
+      <div class="title">
+        <figure>
+          <img src="img/lock.png" alt="img-lock">
+        </figure>
+      </div>
+      <div class="title">
+        <h3 id="locked"></h3>
+      </div>
+      <a href="index.html" class="finish">return homepage</a>
+    </section>
+
+  </main>
+
+  <footer class="fixed">
+    <p class="foot">© Copyrigth. 2019 INTERNATIONAL EDUCATION. All rights reserved.</p>
+    <nav class="social">
+      <a href="https://es-la.facebook.com/" target="_blank"><img class="redes" src="img/facebook-logo.png"
+          alt="logo-facebook"></a>
+      <a href="https://twitter.com/?lang=es" target="_blank"><img class="redes" src="img/twitter-logo.png"
+          alt="logo-twitter"></a>
+      <a href="https://www.instagram.com/instagram/?hl=es-la" target="_blank"><img class="redes"
+          src="img/instagram-logo.png" alt="logo-instagram"></a>
+    </nav>
+  </footer>
+
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
