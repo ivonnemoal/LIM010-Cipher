@@ -1,6 +1,6 @@
-//  window.cipher = {
-//  encode: (offset, string) => {
-encode = (offset, string) => {
+ window.cipher = {
+
+encode: (offset, string) => {
   let textResult = '';
   for (let i = 0; i < string.length; i++) {
     const Ascii = string.charCodeAt(i);
@@ -8,11 +8,9 @@ encode = (offset, string) => {
     const letterEncode = String.fromCharCode(cipherCode);
     textResult += letterEncode;
   } return textResult;
-};
-//  },
+},
 
-//  decode: (offset, string) => {
-decode = (offset, string) => {
+decode: (offset, string) => {
   let textResult = '';
   for (let i = 0; i < string.length; i++) {
     const Ascii = string.charCodeAt(i);
@@ -20,7 +18,5 @@ decode = (offset, string) => {
     const letterDecode = String.fromCharCode(cipherCode);
     textResult += letterDecode;
   } return textResult;
-};
-
-//   }
-//  };
+}
+}

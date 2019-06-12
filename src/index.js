@@ -1,7 +1,12 @@
 /* Acá va tu código */
 
-const result = document.getElementById('result');
+// const result = document.getElementById('result');
+const welcome = document.getElementById('welcome');
+const locked = document.getElementById('locked');
+const error = document.getElementById('error');
 const btnLogin = document.getElementById('btn');
+const btnEncode = document.getElementById('btnEncode');
+const btnDecode = document.getElementById('btnDecode');
 let counter = 2;
 
 // funcion de ingreso
@@ -15,9 +20,34 @@ const validatePassword = btnLogin.addEventListener('click', () => {
     if (counter > 0) {
         counter--;
         if (password === 'LABORATORIA') {
-            result.innerHTML = 'WELCOME' + ' ' + name;
+            welcome.innerHTML = 'Welcome' + ' ' + name;
         }else {
-            result.innerHTML = 'incorrect password try again';}
+            error.innerHTML = 'incorrect password try again';}
     }else {
-        result.innerHTML = '¡WE ARE SORRY BUT YOU CAN NOT ENTER FOR NOW!';}
+        locked.innerHTML = '¡WE ARE SORRY BUT YOU CAN NOT ENTER FOR NOW!';}
+});
+
+const Encode = btnEncode.addEventListener('click',(e) => {
+    const offset = parseInt(document.getElementById('offset').value);
+    document.getElementById('offset').value = '';
+  
+if(e){
+    const string = document.getElementById('textCode').value;
+    document.getElementById('textCode').value = '';
+
+    const result = document.getElementById('result');
+    result.innerHTML = cipher.encode(offset,string);   
+    }
+});
+
+const Decode = btnDecode.addEventListener('click',(e) => {
+    const offset = parseInt(document.getElementById('offset').value);
+    
+    if(e){
+    const string = document.getElementById('textCode').value;
+    document.getElementById('textCode').value = '';
+
+    const result = document.getElementById('result');
+    result.innerHTML = cipher.decode(offset,string);
+    }
 });
