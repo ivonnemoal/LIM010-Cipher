@@ -6,8 +6,7 @@ const btnEncode = document.getElementById('btnEncode');
 const btnDecode = document.getElementById('btnDecode');
 let counter = 2;
 
-// Logeo
-const validatePassword = btnLogin.addEventListener('click', () => {
+btnLogin.addEventListener('click', () => {
     const name = document.getElementById('name').value;
     document.getElementById('name').value = '';
 
@@ -26,9 +25,7 @@ const validatePassword = btnLogin.addEventListener('click', () => {
     }
 });
 
-const Encode =
-
-    btnEncode.addEventListener('click', (e) => {
+btnEncode.addEventListener('click', (e) => {
         const offset = parseInt(document.getElementById('offset').value);
         document.getElementById('offset').value = '';
 
@@ -41,7 +38,7 @@ const Encode =
         }
     });
 
-const Decode = btnDecode.addEventListener('click', (e) => {
+btnDecode.addEventListener('click', (e) => {
     const offset = parseInt(document.getElementById('offset').value);
     document.getElementById('offset').value = '';
     if (e) {
@@ -52,12 +49,3 @@ const Decode = btnDecode.addEventListener('click', (e) => {
         result.innerHTML = cipher.decode(offset, string);
     }
 });
-
-
-// Reset
-// const btnReset = document.getElementById('btnReset');
-
-// const Reset = btnReset.addEventListener('click',() => {
-
-// });
-

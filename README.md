@@ -11,7 +11,7 @@
 
 ### Decisiones de diseño.
 
-**El diseño** de la pagina fue pensado en un **color que brinde seguridad, profesionalismo y confianza,** mi eleccion fue el **azul** como principal seguido de colores neutros como plomo, negro y blanco, se penso en una pagina sencilla y de facil acceso abarquen una misma pagina la funcion principal para que el usuario no se aburra.
+**El diseño** de la pagina fue pensado en un **color que brinde seguridad, profesionalismo y confianza,** mi eleccion fue el **azul** como principal seguido de colores neutros como plomo, negro y blanco.
 Para mi diseño coloque como **imagen de fondo un grupo de estudiantes** en clase y el **escudo de una institucion,** este logo puede cambiar dependiendo del centro educativo.
 
 #### * Imagen del Diagrama de flujo.
@@ -24,7 +24,7 @@ Para mi diseño coloque como **imagen de fondo un grupo de estudiantes** en clas
 
 #### * Resumen del feedback recibido indicando las mejoras a realizar.
 
-En mi **feedback** lo que me indicaron fue hacer mi pagina mas dinamica, haciendo que **en solo una pagina se incluya mi funcion cifrar y descifrar**.
+En mi **feedback** lo que me indicaron fue hacer mi pagina mas dinamica y de facil acceso haciendo que **en solo una pagina se incluya mi funcion principal de cifrar y descifrar** para que el usuario no se aburra del proceso.
 
 Ademas de asignarle enlaces a mi **boton home** para volver al inicio y a los logos de redes las sociales.
 
