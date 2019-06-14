@@ -26,17 +26,17 @@ btnLogin.addEventListener('click', () => {
 });
 
 btnEncode.addEventListener('click', (e) => {
-        const offset = parseInt(document.getElementById('offset').value);
-        document.getElementById('offset').value = '';
+    const offset = parseInt(document.getElementById('offset').value);
+    document.getElementById('offset').value = '';
 
-        if (e) {
-            const string = document.getElementById('textCode').value;
-            document.getElementById('textCode').value = '';
+    if (e) {
+        const string = document.getElementById('textCode').value;
+        document.getElementById('textCode').value = '';
 
-            const result = document.getElementById('result');
-            result.innerHTML = cipher.encode(offset, string);
-        }
-    });
+        const result = document.getElementById('result');
+        result.innerHTML = cipher.encode(offset, string);
+    }
+});
 
 btnDecode.addEventListener('click', (e) => {
     const offset = parseInt(document.getElementById('offset').value);
