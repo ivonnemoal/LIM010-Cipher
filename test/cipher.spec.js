@@ -20,14 +20,11 @@ describe('cipher', () => {
     it('debería retornar "3456789012" para "0123456789" con offset 33', () => {
       assert.equal(cipher.encode(33, "0123456789"), "3456789012");
     });
-    it('debería retornar "Ññ" para "Ññ" con offset 33', () => {
-      assert.equal(cipher.encode(33, "Ññ"), "Ññ");
-    });
     it('debería retornar " " para " " con offset 33', () => {
       assert.equal(cipher.encode(33, " "), " ");
     });
-    it('debería retornar "!¡¿?#$%&(),;.:@á" para "!¡¿?#$%&(),;.:@á" con offset 33', () => {
-      assert.equal(cipher.encode(33, "!¡¿?#$%&(),;.:@á"), "!¡¿?#$%&(),;.:@á");
+    it('debería retornar "âô}$&()#+,;" para "ÁÓá!#%&/()=" con offset 33', () => {
+      assert.equal(cipher.encode(33, "ÁÓá!#%&/()="), "âô}$&()#+,;");
     });
   });
 
@@ -46,14 +43,11 @@ describe('cipher', () => {
     it('debería retornar "0123456789" para "3456789012" con offset 33', () => {
       assert.equal(cipher.decode(33, "3456789012"), "0123456789");
     });
-    it('debería retornar "Ññ" para "Ññ" con offset 33', () => {
-      assert.equal(cipher.decode(33, "Ññ"), "Ññ");
-    });
     it('debería retornar " " para " " con offset 33', () => {
       assert.equal(cipher.decode(33, " "), " ");
     });
-    it('debería retornar "!¡¿?#$%&(),;.:@á" para "!¡¿?#$%&(),;.:@á" con offset 33', () => {
-      assert.equal(cipher.decode(33, "!¡¿?#$%&(),;.:@á"), "!¡¿?#$%&(),;.:@á");
+    it('debería retornar "ÁÓá!#%&/()=" para "âô}$&()#+,;" con offset 33', () => {
+      assert.equal(cipher.decode(33, "âô}$&()#+,;"), "ÁÓá!#%&/()=");
     });
   });
 });
