@@ -13,10 +13,10 @@ window.cipher = {
       } else if (Ascii >= 97 && Ascii <= 122 && offset >= 0) {
         let cipherCode = (Ascii - 97 + offset) % 26 + 97;
         letterEncode = String.fromCharCode(cipherCode);
-      } else if (Ascii >= 33 && Ascii <= 64 && offset >= 0) {
-        let cipherCode = (Ascii - 33 + offset) % 32 + 33;
+      } else if (Ascii >= 48 && Ascii <= 57 && offset >= 0) {
+        let cipherCode = (Ascii - 48 + offset) % 10 + 48;
         letterEncode = String.fromCharCode(cipherCode);
-      } else {
+      } else{
         let otherCaracter = String.fromCharCode(Ascii);
         letterEncode = otherCaracter;
       } textResult += letterEncode;
@@ -31,13 +31,13 @@ window.cipher = {
       const Ascii = string.charCodeAt(i);
 
       if (Ascii >= 65 && Ascii <= 90 && offset >= 0) {
-        let cipherCode = (Ascii - offset + 65) % 26 + 65;
+        let cipherCode = (Ascii - 90 - offset) % 26 + 90;
         letterEncode = String.fromCharCode(cipherCode);
       } else if (Ascii >= 97 && Ascii <= 122 && offset >= 0) {
-        let cipherCode = (Ascii - offset + 33) % 26 + 97;
+        let cipherCode = (Ascii - 122 - offset) % 26 + 122;
         letterEncode = String.fromCharCode(cipherCode);
-      } else if (Ascii >= 33 && Ascii <= 64 && offset >= 0) {
-        let cipherCode = (Ascii - offset - 1) % 32 + 33;
+      } else if (Ascii >= 48 && Ascii <= 57 && offset >= 0) {
+        let cipherCode = (Ascii - 57 - offset) % 10 + 57;
         letterEncode = String.fromCharCode(cipherCode);
       } else {
         let otherCaracter = String.fromCharCode(Ascii);

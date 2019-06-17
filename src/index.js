@@ -3,6 +3,14 @@ const locked = document.getElementById('locked');
 const error = document.getElementById('error');
 let counter = 2;
 
+const btnEnter = document.getElementById('password');
+btnEnter.addEventListener('keyup', (event) => {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById('btnLogin').click();
+  }
+});
+
 const btnLogin = document.getElementById('btnLogin');
 btnLogin.addEventListener('click', () => {
     const name = document.getElementById('name').value;
@@ -49,11 +57,11 @@ optionDecode.addEventListener("click", () => {
 });
 
 const btnEncode = document.getElementById('btnEncode');
-btnEncode.addEventListener('click', (e) => {
+btnEncode.addEventListener('click', (event) => {
     const offset = parseInt(document.getElementById('offset').value);
     document.getElementById('offset').value = '';
 
-    if (e) {
+    if (event) {
         const string = document.getElementById('textCode').value;
         document.getElementById('textCode').value = '';
 
@@ -63,10 +71,10 @@ btnEncode.addEventListener('click', (e) => {
 });
 
 const btnDecode = document.getElementById('btnDecode');
-btnDecode.addEventListener('click', (e) => {
+btnDecode.addEventListener('click', (event) => {
     const offset = parseInt(document.getElementById('offset').value);
     document.getElementById('offset').value = '';
-    if (e) {
+    if (event) {
         const string = document.getElementById('textCode').value;
         document.getElementById('textCode').value = '';
 

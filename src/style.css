@@ -22,9 +22,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+  top: 0px;
 }
 
 main {
+
   width: 100%;
   height: auto;
 
@@ -38,7 +41,7 @@ footer {
   height: auto;
   padding: 10px 3em;
   background-color: rgb(172, 166, 166);
-  position: relative;
+  position: fixed;
   bottom: 0px;
 }
 
@@ -75,18 +78,19 @@ footer {
   opacity: 0.6;
   background-color: slategray;
 }
+.nav-home:active {
+  transform: 0.90;
+}
 
 .user {
   width: 200px;
   height: auto;
   margin: 0 7em 1em 7em;
-
 }
 
 .user-icon {
   width: 100%;
 }
-
 
 .buttons {
   margin: 1em 8em;
@@ -96,12 +100,15 @@ footer {
   border-radius: 15px;
   font-size: 22px;
   cursor: pointer;
-  /* border: 8px double rgba(12, 1, 59, 0.8); */
 }
 
 .buttons:hover {
   opacity: 0.6;
   background-color: rgb(200, 209, 219);
+}
+
+.buttons:active {
+  transform: 0.95;
 }
 
 .inputs {

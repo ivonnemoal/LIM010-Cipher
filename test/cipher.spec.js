@@ -17,11 +17,17 @@ describe('cipher', () => {
     it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" con offset 33', () => {
       assert.equal(cipher.encode(33, "abcdefghijklmnopqrstuvwxyz"), "hijklmnopqrstuvwxyzabcdefg");
     });
-    it('debería retornar "456" para "123" con offset 3', () => {
-      assert.equal(cipher.encode(3, "123"), "456");
+    it('debería retornar "3456789012" para "0123456789" con offset 33', () => {
+      assert.equal(cipher.encode(33, "0123456789"), "3456789012");
     });
-    it('debería retornar "ñ" para "ñ" con offset 3', () => {
-      assert.equal(cipher.decode(3, "ñ"), "ñ");
+    it('debería retornar "Ññ" para "Ññ" con offset 33', () => {
+      assert.equal(cipher.encode(33, "Ññ"), "Ññ");
+    });
+    it('debería retornar " " para " " con offset 33', () => {
+      assert.equal(cipher.encode(33, " "), " ");
+    });
+    it('debería retornar "!¡¿?#$%&(),;.:@á" para "!¡¿?#$%&(),;.:@á" con offset 33', () => {
+      assert.equal(cipher.encode(33, "!¡¿?#$%&(),;.:@á"), "!¡¿?#$%&(),;.:@á");
     });
   });
 
@@ -37,11 +43,17 @@ describe('cipher', () => {
     it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" con offset 33', () => {
       assert.equal(cipher.decode(33, "hijklmnopqrstuvwxyzabcdefg"), "abcdefghijklmnopqrstuvwxyz");
     });
-    it('debería retornar "123" para "456" con offset 3', () => {
-      assert.equal(cipher.decode(3, "456"), "123");
+    it('debería retornar "0123456789" para "3456789012" con offset 33', () => {
+      assert.equal(cipher.decode(33, "3456789012"), "0123456789");
     });
-    it('debería retornar "ñ" para "ñ" con offset 3', () => {
-      assert.equal(cipher.decode(3, "ñ"), "ñ");
+    it('debería retornar "Ññ" para "Ññ" con offset 33', () => {
+      assert.equal(cipher.decode(33, "Ññ"), "Ññ");
+    });
+    it('debería retornar " " para " " con offset 33', () => {
+      assert.equal(cipher.decode(33, " "), " ");
+    });
+    it('debería retornar "!¡¿?#$%&(),;.:@á" para "!¡¿?#$%&(),;.:@á" con offset 33', () => {
+      assert.equal(cipher.decode(33, "!¡¿?#$%&(),;.:@á"), "!¡¿?#$%&(),;.:@á");
     });
   });
 });
