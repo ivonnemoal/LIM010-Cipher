@@ -28,9 +28,8 @@ window.cipher = {
       } else if (Ascii >= 123 && Ascii <= 255 && offset >= 0) {
         let cipherCode = (Ascii - 123 + offset) % 133  + 123;
         letterEncode = String.fromCharCode(cipherCode);
-      }else{
-        let otherCaracter = String.fromCharCode(Ascii);
-        letterEncode = otherCaracter;
+      }else if(Ascii === 32 && offset >= 0){
+        letterEncode = String.fromCharCode(Ascii);
       } textResult += letterEncode;
     } return textResult;
   },
@@ -63,9 +62,8 @@ window.cipher = {
       } else if (Ascii >= 123 && Ascii <= 255 && offset >= 0) {
         let cipherCode = (Ascii - 255 - offset) % 133  + 255;
         letterEncode = String.fromCharCode(cipherCode);
-      } else {
-        let otherCaracter = String.fromCharCode(Ascii);
-        letterEncode = otherCaracter;
+       }else if(Ascii === 32 && offset >= 0){
+        letterEncode = String.fromCharCode(Ascii);
       } textResult += letterEncode;
     } return textResult;
   }
