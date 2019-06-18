@@ -16,6 +16,12 @@ window.cipher = {
       } else if (Ascii >= 48 && Ascii <= 57 && offset >= 0) {
         let cipherCode = (Ascii - 48 + offset) % 10 + 48;
         letterEncode = String.fromCharCode(cipherCode);
+      } else if (Ascii >= 33 && Ascii <= 43 && offset >= 0) {
+        let cipherCode = (Ascii - 33 + offset) % 10 + 33;
+        letterEncode = String.fromCharCode(cipherCode);
+      } else if (Ascii >= 128 && Ascii <= 165 && offset >= 0) {
+        let cipherCode = (Ascii - 128 + offset) % 38 + 128;
+        letterEncode = String.fromCharCode(cipherCode);
       } else{
         let otherCaracter = String.fromCharCode(Ascii);
         letterEncode = otherCaracter;
@@ -38,6 +44,12 @@ window.cipher = {
         letterEncode = String.fromCharCode(cipherCode);
       } else if (Ascii >= 48 && Ascii <= 57 && offset >= 0) {
         let cipherCode = (Ascii - 57 - offset) % 10 + 57;
+        letterEncode = String.fromCharCode(cipherCode);
+      } else if (Ascii >= 33 && Ascii <= 43 && offset >= 0) {
+        let cipherCode = (Ascii - 43 - offset) % 10 + 43;
+        letterEncode = String.fromCharCode(cipherCode);
+      } else if (Ascii >= 128 && Ascii <= 165 && offset >= 0) {
+        let cipherCode = (Ascii - 165 - offset) % 110 + 165;
         letterEncode = String.fromCharCode(cipherCode);
       } else {
         let otherCaracter = String.fromCharCode(Ascii);
